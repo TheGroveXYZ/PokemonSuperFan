@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Kalos League</title>
+  </head>
+  <body>
+    <div class="top-row purple center-content">
+      <div class="top">
+        
+        <button><a href="https://v39kxy.csb.app/">Next!</a></button>
+        
+        <h1>
+          <h1>The battle to be crowned Kalos League Champion! Semi-Finals</h1>
+        </h1>
+      </div>
+    </div>
+    <div class="main yellow">
+      <div class="box1 black center-content">
+        <img src="images/ashGreninja.png" id="1" onclick="ninja()"  class="clickable1" />
+      </div>
+      <div class="box2 black center-content">
+        <iframe
+          id="myVideo"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/k-ctCNR1JV8?si=ik0JOKioZDvcb5Ie" class="clickable1" />
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="box1 black center-content">
+        <img src="images/megaSceptile.png" id="2" onclick="sceptile()" class="clickable1"/>
+      </div>
+      
+</div>
+    <div class="bottom-row black">
+      <div class="box black"><p class="left-label">Greninja is a powerful water/dark type pokemon.
+        Ash and his greninja's bond is so strong that greninja changes form, similar to mega evolution (Ash-Greninja)</p></div>
+      <div class="box2 black center-content">
+        <img src= "images/grensceptile1.png" class="clickable1" id="3" onclick="playSound()" />
+        
+        
+      </div>
+      <div class="box black"><p class="right-label">Sceptile is a powerful grass/dragon type pokemon and is sawyer's ace from the anime. His Sceptile can mega evolve into Mega Sceptile
+      </p></div>
+    <!-- this is an audio file you can play using JavaScript -->
+    <audio src="images/sounds/Greninja.wav" id="greninjaSound"></audio>
+    <audio src="images/sounds/Sceptile.mp3" id="sceptileSound"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>

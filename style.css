@@ -1,0 +1,157 @@
+/* the 100vh and 100vw set the size of the body to fill the viewport (screen) */
+body {
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  background-color: #000000;
+  margin: 0;
+}
+/* build your layout */
+.top-row {
+  height: 20%;
+  width: 100%;
+  display: flex;
+}
+.main {
+  height: 60%;
+  width: 100%;
+  display: flex;
+}
+.box {
+  height: 100%;
+  width: 33.3%;
+  display: flex;
+}
+.bottom-row {
+  display: flex;
+}
+.bottom-row {
+  background: black;
+  color: white; /* so the text shows on black background */
+  text-align: left;
+  padding: 20px;
+  font-size: 20px;
+  position: fixed; /* if you want it “stuck” to the bottom */
+  bottom: 0;
+  height: 20%;
+  width: 100%;
+}
+.left-label {
+  margin-left: 30px;
+}
+.right-label {
+  margin-right: 30px;
+}
+.box1 {
+  height: 100%;
+  width: 33.33%;
+}
+.box2 {
+  height: 100%;
+  width: 33.33%;
+}
+/* this will make ALL <img> elements at most 100% of their PARENT! */
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#blackBar {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 20px;
+}
+/* this class goes on the PARENT div of the image! */
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+body {
+  background-color: #523d64;
+}
+/* colors to see divs */
+.purple {
+  background-color: #523d64;
+}
+.green {
+  background-color: #4d8a0d;
+}
+.orange {
+  background-color: #da6339;
+}
+.gold {
+  background-color: #d3a047;
+}
+.yellow {
+  background-color: #ffeca7;
+}
+.black {
+  background-color: #000000;
+}
+.slate {
+  background-color: #1e171f;
+}
+.dark-grey {
+  background-color: #3a3b3c;
+}
+.light-grey {
+  background-color: #d3d3d3;
+}
+.blue {
+  background-color: blue;
+}
+p {
+  font-size: 24px;
+}
+p {
+  font-family: Cambria, sans-serif;
+}
+
+/* responsive breakpoints */
+@media only screen and (max-width: 500px) {
+  .top-row {
+    display: block;
+  }
+  .bottom-row {
+    display: none;
+  }
+  .main {
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+  .box1 {
+    height: calc(100% / 3);
+    width: 100%;
+  }
+  .box2 {
+    height: calc(100% / 3);
+    width: 100%;
+  }
+}
+.clickable1 {
+  filter: brightness(85%) drop-shadow(2px 8px 3px);
+}
+/* changes to the style when the user HOVERS */
+.clickable1:hover {
+  cursor: pointer;
+  filter: brightness(100%) drop-shadow(2px 8px 3px);
+  transform: scale(1.04);
+}
+/* changes to the style when the user CLICKS */
+.clickable1:active {
+  filter: drop-shadow(0px 0px 3px);
+  transform: scale(0.98);
+}
+@media only screen and (max-width: 600px) {
+  body {
+    display: block;
+  }
+  .button-div {
+    width: 100%;
+    height: calc(100% / 3);
+    display: flex;
+  }
+}
